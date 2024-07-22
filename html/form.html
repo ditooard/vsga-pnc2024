@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        table {
+            margin: 50px auto;
+            padding: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #007BFF;
+            background-color: #f4f4f4;
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM</h1>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td><input type="text" name="nama"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea name="Alamat" id="Alamat"></textarea></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Telp.</td>
+            <td><input type="text" name="telp"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+                <input type="radio" name="jk" id="Laki - Laki" value="Laki - Laki"> Laki - Laki 
+                <input type="radio" name="jk" id="Perempuan" value="Perempuan"> Perempuan
+                <input type="radio" name="jk" id="Tidak Menyebutkan" value="Tidak Menyebutkan"> Tidak Menyebutkan
+            </td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>
+                <input type="checkbox" name="hobi" id="Main Game" value="Main Game"> Main Game
+                <input type="checkbox" name="hobi" id="Coding" value="Coding"> Coding
+                <input type="checkbox" name="hobi" id="Mancing" value="Mancing"> Mancing
+                <input type="checkbox" name="hobi" id="Mendaki" value="Mendaki"> Mendaki
+            </td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+            <td>
+                <select name="Jurusan" id="">
+                    <option value="Informatika">Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Ekonomi">Ekonomi</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <p align="center">
+        <a href="index.html">Back</a>
+    </p>
+</body>
+</html>
